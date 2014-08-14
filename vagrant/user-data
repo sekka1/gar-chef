@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Update Ubuntu and install git
+apt-get -y update
+apt-get install -y git
+
+# Install Opscode chef client
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+
+# Run chef-solo to provision itself into a docker server
+chef-solo -c /tmp/gar-chef/aws-configs/chef-solo/solo.rb -j /tmp/gar-chef/solo-run_lists/docker-base-server.json
+
+
+
+
+

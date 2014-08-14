@@ -118,7 +118,7 @@
             "SubnetDatabase1d" : { "CIDR" : ".44.0/24" }
         },
         /**
-         * These are generic AWS AMIs: amzn-ami-2011.09.1.i386-ebs
+         * These are generic AWS AMIs: amzn-ami-2011.09.1.i386-ebs, Ubuntu 12.04
          */
         "AMIMappingGenericInstance": {
             "us-east-1": {
@@ -144,6 +144,35 @@
             },
             "ap-northeast-1": {
                 "AMI": "ami-dcfa4edd"
+            }
+        },
+        /**
+         * AWS AMI: Ubuntu 14.04
+         */
+        "AMIMappingUbuntu1404": {
+            "us-east-1": {
+                "AMI": "ami-30519058"
+            },
+            "us-west-1": {
+                "AMI": "ami-957070d0"
+            },
+            "us-west-2": {
+                "AMI": "ami-5b58266b"
+            },
+            "eu-west-1": {
+                "AMI": "ami-3986524e"
+            },
+            "sa-east-1": {
+                "AMI": "ami-1189270c"
+            },
+            "ap-southeast-1": {
+                "AMI": "ami-dad68888"
+            },
+            "ap-southeast-2": {
+                "AMI": "ami-eb6d0ad1"
+            },
+            "ap-northeast-1": {
+                "AMI": "ami-cb4610ca"
             }
         },
         /**
