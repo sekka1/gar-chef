@@ -1095,7 +1095,7 @@
             "Properties" : {
                 "ImageId": {
                     "Fn::FindInMap": [
-                        "AMIMappingGenericInstance",
+                        "AMIMappingUbuntu1404",
                         {
                             "Ref": "AWS::Region"
                         },
@@ -1209,7 +1209,7 @@
                 "KeyName" : { "Fn::FindInMap" : [ "AWSSSHKeys", "default", "key" ]},
                 "ImageId": {
                     "Fn::FindInMap": [
-                        "AMIMappingGenericInstance",
+                        "AMIMappingUbuntu1404",
                         {
                             "Ref": "AWS::Region"
                         },
